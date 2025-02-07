@@ -14,6 +14,7 @@ type Token struct {
 
 const (
 	// Special tokens
+	ILLEGAL = "ILLEGAL"
 	EOF     = "EOF"
 	NEWLINE = "NEWLINE"
 	LINENO  = "LINENO"
@@ -32,6 +33,7 @@ const (
 	GOTO   = "GOTO"
 	INPUT  = "INPUT"
 	LET    = "LET"
+	PRINT  = "PRINT"
 	REM    = "REM"
 	RETURN = "RETURN"
 	FOR    = "FOR"
@@ -115,6 +117,7 @@ var keywordMap = map[string]Type{
 	"next":   NEXT,
 	"or":     OR,
 	"read":   READ,
+	"print":  PRINT,
 	"rem":    REM,
 	"return": RETURN,
 	"step":   STEP,
